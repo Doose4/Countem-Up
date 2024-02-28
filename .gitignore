@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Countem-Up.sln
+Countem-Up.vcxproj
+Countem-Up.vcxproj.filters
