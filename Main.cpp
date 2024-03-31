@@ -27,12 +27,41 @@ void tester() {
 	counter.total();
 
 	//has a starting num
-	GroceryCounter startingnum = GroceryCounter(100);
+	GroceryCounter startingnum = GroceryCounter(2000);
 	startingnum.total();
 
 	//has a starting num that isn't vaild
 	GroceryCounter invalidcount = GroceryCounter(-100);
 	invalidcount.total();
+
+	//custom max
+	GroceryCounter customMax = GroceryCounter(0,1000);
+	customMax.total();
+	customMax.ones_button(1);
+	customMax.total();
+	customMax.tens_button(1);
+	customMax.total();
+	customMax.ones_button(9);
+	customMax.total();
+
+
+	//both
+	GroceryCounter bothcount = GroceryCounter(1789, 1890);
+	bothcount.total();
+	bothcount.tens_button(110);
+	startingnum.total();
+
+	//decrement
+	startingnum.total();
+	startingnum.decr_tens_button();
+	startingnum.total();
+	startingnum.decr_ones_button();
+	startingnum.total();
+	startingnum.decr_tenths_button();
+	startingnum.total();
+	startingnum.decr_hundredths_button();
+	startingnum.total();
+
 }
 
 int main() {
