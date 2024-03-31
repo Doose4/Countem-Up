@@ -26,6 +26,13 @@ void tester() {
 
 	counter.total();
 
+	//has a starting num
+	GroceryCounter startingnum = GroceryCounter(100);
+	startingnum.total();
+
+	//has a starting num that isn't vaild
+	GroceryCounter invalidcount = GroceryCounter(-100);
+	invalidcount.total();
 }
 
 int main() {

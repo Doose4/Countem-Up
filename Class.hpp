@@ -3,6 +3,7 @@
 
 class GroceryCounter {
 private:
+	int newmax;
 	int tens;
 	int ones;
 	int tenths;
@@ -10,7 +11,7 @@ private:
 	int overflows;
 
 public:
-	explicit GroceryCounter();
+	explicit GroceryCounter(int startingnum = 0, int custommax = 0);
 	void tens_button(int times_hit = 1);
 	void ones_button(int times_hit = 1);
 	void tenths_button(int times_hit = 1);
